@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+}
+/* HEADER STYLES */
+header {
+  display: block;
+  /* justify-content: space-between; */
+  color: #4f61ff;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+
+  /* background-color: transparent; */
+}
+header h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  text-shadow: 0.5rem 0.5rem 0.75rem black;
+}
+header h4 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-shadow: 0.125rem 0.125rem 0.25rem black;
+}
+header a {
+  color: #4f61ff;
+}
+header a:hover {
+  color: white;
+}
+/* NAVBAR STYLES */
+nav {
+  display: inline-flexbox;
+  margin-bottom: 2rem;
+}
+/* Add sticky CSS for the navbar */
+.topnav {
+  background-color: #4f61ff;
+  overflow: hidden;
+  position: -webkit-sticky;
+}
+/* Style the links inside the navigation bar and float right*/
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e0b92f;
+  color: #4f61ff;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #101d94;
+  color: white;
+}
+.topnav .fa-linkedin {
+  color: white;
+}
+.topnav .fa-linkedin:hover {
+  color: #4f61ff;
+}
+/* styling for the sticky navbar */
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+/* body styles */
+body::after {
+  content: '';
+  background-image: url(../images/background_2.jpg);
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+/* ARTICLE BIO STYLES */
+#bio {
+  display: none;
+  background: #e0b92f;
+  background-size: cover;
+  box-shadow: 0 5px 10px black;
+  color: #223a77;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  background: #e0b92f;
+  max-width: 70%;
+  margin: 0 auto;
+  /* max-height: fit-content; */
+  padding: 2em;
+  align-items: center;
+  justify-content: center;
+}
+#bio h2 {
+  color: #947401;
+}
+figure {
+  float: left;
+}
+#bio img {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+figcaption {
+  font-family: 'Rajdhani', sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/* WORK SECTION STYLES */
+section {
+  display: flex;
+  flex-direction: row;
+}
+h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+/* BACKGROUND IMAGES AND HEADER STYLES FOR WORK PROJECT PANELS */
+.row {
+  margin: 2rem;
+}
+.html-css, .proj,
+.javascript {
+  height: 45rem;
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0 1rem 2rem black;
+}
+.html-css {
+  background-image: url('../images/work_html-css_85.jpg');
+}
+.proj {
+  background-image: url('../images/work_mernstack.jpg');
+  text-align: center;
+}
+.javascript {
+background-image: url('../images/work_javascript_85.jpg');
+}
+.htm {
+  margin: 0 auto;
+  position: relative;
+}
+.htm.hidden {
+  display: none;
+}
+.htmTitle {
+  position: absolute;
+  top: 15rem;
+  left: 7rem;
+}
+.jsc {
+  margin: 0 auto;
+  position: relative;
+}
+.jsc.hidden {
+  display: none;
+}
+.jscTitle {
+  position: absolute;
+  top: 18.75rem;
+  left: 7rem;
+}
+h5 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4f61ff;
+  text-shadow: .125rem .125rem .25rem black;
+}
+h5 a:hover {
+  color: #e0b92f;
+}
+.hc-img, .js-img,
+.proj-img {
+  box-shadow: 0 1.5rem 2rem black;
+}
+#htmlCSS,
+#jscript,
+#projects {
+  margin: 0 auto;
+}
+#btnJS,
+#btnHC,
+#btnProj {
+  color: white;
+  background: none;
+  border: none;
+}
+.projTitle {
+  text-shadow: .25rem .25rem .5rem black;
+  font-size: 2rem;
+}
+.projTitle a {
+  color: white;
+}
+.projTitle a:hover {
+  color: #e0b92f;
+}
+.projTitle.hidden {
+  display: none;
+}
+h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 7rem;
+  font-weight: 700;
+  text-shadow: .5rem .5rem 1rem black;
+  text-align: center;
+  align-items: center;
+}
+/* Hide the project image panels by default */
+a.hidden {
+  display: none;
+}
+/* FOOTER STYLES */
+footer {
+  padding: .5rem;
+  clear: both;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+}
+footer h3 {
+  color: #4f61ff;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: none;
+}
+.fa-envelope, .fa-github,
+.fa-linkedin {
+  color: #4f61ff;
+}
+.fa-envelope:hover,
+.fa-github:hover, 
+.fa-linkedin:hover {
+  color: white;
+}
+footer p {
+  color: #4f61ff;
+  font-size: 2rem;
+  text-align: center;
+}
+/* Media queries for mobile devices */
+/* ----------- iPhone 4 and 4S ----------- *
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    margin: 0rem;
+  }
+  header h1 {
+    font-size: 1rem;
+  }
+  header h4 {
+    font-size: 1rem;
+  }
+  .topnav a {
+    font-size: .75rem;
+    padding: .5rem;
+  }
+  section {
+    flex-direction: column;
+  }
+  #bio {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  figure img {
+    max-height: 17rem;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 3rem;
+    text-shadow: .25rem .25rem .75rem black;
+  }
+  .row {
+    margin: 1rem;
+    padding: .125rem;
+  }
+  .html-css, .proj,
+  .javascript, .row {
+  height: 30rem;
+}
+  #jscript, #htmlCSS,
+  #projects {
+    height: 30rem;
+  }
+  .projTitle {
+    font-size: 1rem;
+  }
+  .htmTitle {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+  }
+  .jscTitle {
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+  }
+  h5 {
+    font-size: 1rem;
+    text-shadow: .125rem .125rem .25rem black;
+  }
+  .btn {
+    margin-right: 1.75rem;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .topnav a {
+    font-size: 0.75rem;
+    padding: .5rem;
+  }
+  #bio {
+    font-size: 1rem;
+  }
+  #bio img {
+    height: 19rem;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .topnav a {
+    font-size: 1rem;
+    padding: .5rem;
+  }
+  #bio {
+    font-size: 1rem;
+  }
+  #bio img {
+    max-height: 19rem;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+  .html-css, .proj,
+  .javascript {
+  height: 35rem;
+}
+.htmTitle {
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+}
+.jscTitle {
+  position: absolute;
+  top: 9rem;
+  left: 3.75rem;
+}
+h5 {
+  font-size: 1rem;
+  text-shadow: .125rem .125rem .25rem black;
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  #bio {
+    font-size: 1.5rem;
+  }
+  #bio img {
+    max-height: 24rem;
+  }
+  figcaption {
+    font-size: 1.25rem;
+  }
+  .html-css, .proj,
+  .javascript {
+  height: 39rem;
+}
+.htmTitle {
+  position: absolute;
+  top: 9rem;
+  left: 5.5rem;
+}
+.jscTitle {
+  position: absolute;
+  top: 10.75rem;
+  left: 5rem;
+}
+h5 {
+  font-size: 1rem;
+  text-shadow: .125rem .125rem .25rem black;
+}
+}
+}
