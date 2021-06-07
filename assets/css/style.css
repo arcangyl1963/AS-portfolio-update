@@ -155,6 +155,12 @@ h2 {
 .javascript {
 background-image: url('../images/work_javascript_85.jpg');
 }
+.project {
+  margin: 0 auto;
+}
+/* .project.hidden {
+  display: none;
+} */
 .htm {
   margin: 0 auto;
   position: relative;
@@ -164,8 +170,18 @@ background-image: url('../images/work_javascript_85.jpg');
 }
 .htmTitle {
   position: absolute;
-  top: 15rem;
+  top: 12rem;
   left: 7rem;
+}
+.htmTitle2 {
+  position: absolute;
+  top: 12rem;
+  left: 9rem;
+}
+.htmTitle3 {
+  position: absolute;
+  top: 12rem;
+  left: 4rem;
 }
 .jsc {
   margin: 0 auto;
@@ -174,7 +190,17 @@ background-image: url('../images/work_javascript_85.jpg');
 .jsc.hidden {
   display: none;
 }
-.jscTitle {
+.jscTitle1 {
+  position: absolute;
+  top: 14rem;
+  left: 7rem;
+}
+.jscTitle2 {
+  position: absolute;
+  top: 14rem;
+  left: 12rem;
+}
+.jscTitle3 {
   position: absolute;
   top: 18.75rem;
   left: 7rem;
@@ -195,7 +221,8 @@ h5 a:hover {
 }
 #htmlCSS,
 #jscript,
-#projects {
+#project1,
+#project2 {
   margin: 0 auto;
 }
 #btnJS,
@@ -205,17 +232,25 @@ h5 a:hover {
   background: none;
   border: none;
 }
-.projTitle {
+.projTitle1,
+.projTitle2 {
   text-shadow: .25rem .25rem .5rem black;
   font-size: 2rem;
 }
-.projTitle a {
+.projTitle1 a {
   color: white;
 }
-.projTitle a:hover {
+.projTitle1 a:hover {
   color: #e0b92f;
 }
-.projTitle.hidden {
+.projTitle2 a {
+  color: white;
+}
+.projTitle2 a:hover {
+  color: #e0b92f;
+}
+#projName1.hidden,
+#projName2.hidden {
   display: none;
 }
 h3 {

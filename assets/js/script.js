@@ -16,18 +16,26 @@ $(document).ready (function () {
     });
     // toggle and show/hide functions for the work projects section button behavior
     $('#btnJS').click(function(event){
-        $('#jscript').toggle();
+        $('#jscript1').toggle();
+        $('#jscript2').toggle();
+        $('#jscript3').toggle();
         $('#jsName1').toggle();
+        $('#jsName2').toggle();
+        $('#jsName3').toggle();
     });
     $('#btnHC').click(function(event){
         $('#htmlCSS1').toggle();
         $('#htmlCSS2').toggle();
+        $('#htmlCSS3').toggle();
         $('#htmName1').toggle();
         $('#htmName2').toggle();
+        $('#htmName3').toggle();
     });
     $('#btnProj').click(function(event){
-        $('#projects').toggle();
-        $('.projTitle').toggle();
+        $('#projName1').toggle();
+        $('#projName2').toggle();
+        $('#project1').toggle();
+        $('#project2').toggle();
     });
     // functions for the active navbar button behavior
     $('#aboutBtn').click(function () {
